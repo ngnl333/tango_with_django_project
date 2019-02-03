@@ -51,15 +51,6 @@ def populate():
 			"Other Frameworks": {"pages": other_pages, "views": 32, "likes": 16} }
 
 
-	# If you want to add more catergories or pages,
-	# add them to the dictionaries above.
-
-	# The code below goes through the cats dictionary, then adds each category,
-	# and then adds all the associated pages for that category.
-	# if you are using Python 2.x then use cats.iteritems() see
-	# http://docs.quantifiedcode.com/python-anti-patterns/readability/
-	# for more information about how to iterate over a dictionary properly.
-
 	for cat, cat_data in cats.items():
 		c = add_cat(cat, cat_data["views"], cat_data["likes"])
 		for p in cat_data["pages"]:
@@ -89,4 +80,3 @@ def add_cat(name, views, likes):
 if __name__ == '__main__':
 	print("Starting Rango population script...")
 	populate()
-
