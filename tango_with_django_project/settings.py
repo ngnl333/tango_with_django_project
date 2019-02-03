@@ -18,12 +18,11 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ibjqu5823x)cogxw!2fxqe%eems*d%&63874sf%(ekx6#ol22^'
+SECRET_KEY = '-_k4^b0)=7g&1m-v=vg7qm7$k1ux=w_@3r(f4uwzmr$u&h%2(9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -119,14 +118,17 @@ USE_L10N = True
 USE_TZ = True
 
 
+#Media Files
+
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR, ]
 
+STATIC_URL = '/static/'
 
-# Media files
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = MEDIA_DIR
+LOGIN_URL = '/rango/login/'
